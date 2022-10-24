@@ -176,7 +176,6 @@ function App() {
   }, []);
 
   return (
-    <>
       <CurrentUserContext.Provider value={currentUser}>
         <Header
           email={currentEmail}
@@ -213,7 +212,6 @@ function App() {
         <InfoTooltip isOpen={isInfoTooltipOpen} onClose={closeAllPopups} sucсess={sucсess} />
         <AddPlacePopup onAddPlace={handleAddPlaceSubmit} isOpen={isAddPlacePopupOpen} onClose={closeAllPopups} />
       </CurrentUserContext.Provider>
-    </>
   );
 }
 
