@@ -1,6 +1,6 @@
 # mesto-react
 
-[Link to the project](http://PSK888.github.io/mesto-react-auth/)
+[Link to the project](http://PSK888.github.io/react-mesto-auth/)
 
 ------
 
