@@ -2,7 +2,7 @@ import logo from '../images/logo.svg';
 import line from '../images/line.svg';
 import Close from '../images/Close.svg';
 import { Link, Route, Routes } from 'react-router-dom';
-import UserMenu from "./UserMenu";
+import UserMenu from "./UserMenu.js";
 
 function Header({ email, handleLogout, isUserMenuOpen, handleOpenUserMenu }) {
     return (
