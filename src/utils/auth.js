@@ -1,3 +1,4 @@
+const BASE_URL = 'https://auth.nomoreparties.co';
 
 const handleResponse = async (data) => {
   const res = await data.json()
@@ -9,7 +10,7 @@ const handleResponse = async (data) => {
 }
 
 export async function register(email, password) {
-  const data = await fetch('https://auth.nomoreparties.co/signup', {
+  const data = await fetch(`${BASE_URL}/signup`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -23,7 +24,7 @@ export async function register(email, password) {
 }
 
 export async function login(email, password) {
-  const data = await fetch('https://auth.nomoreparties.co/signin', {
+  const data = await fetch(`${BASE_URL}/signin`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -38,7 +39,7 @@ export async function login(email, password) {
 
 
 export async function checkToken(token) {
-  const data = await fetch('https://auth.nomoreparties.co/users/me', {
+  const data = await fetch(`${BASE_URL}/users/me`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
